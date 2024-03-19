@@ -1,4 +1,4 @@
-window.location.hostname.endsWith(".flexisched.net") ? (() => {
+(() => window.location.hostname.endsWith(".flexisched.net") ? (() => {
     const registered = []
     const register = () => {
         document.getElementById("results").querySelectorAll("td[class^='alert-key']").forEach(event => {
@@ -27,4 +27,4 @@ window.location.hostname.endsWith(".flexisched.net") ? (() => {
     alert("Click the event you want to snipe!! :D")
     document.querySelectorAll("input[type='text']").forEach(input => input.addEventListener("input", register))
     register()
-})() : alert("Only runnable on FlexiSCHED!")
+})() : alert("Only runnable on FlexiSCHED!"))()
